@@ -3,6 +3,7 @@ services:
 
   # Laravel app
   app:
+    image: anjosebar/apiexample_app
     build:
       context: ./
       dockerfile: app.dockerfile
@@ -15,6 +16,7 @@ services:
 
   # Web server
   web:
+    image: anjosebar/apiexample_web
     build:
       context: ./
       dockerfile: web.dockerfile
